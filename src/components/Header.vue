@@ -92,19 +92,21 @@ export default {
         align-items: center;
     }
     img{    
-        line-height: 80px;
+        padding:10px 0px;
+        height: 80px;
         vertical-align: middle; 
     }
     ul {
-        margin: 30px 0;
         display: flex;
         justify-content: center;
         list-style: none;
         li {
+            height:100%;
             a {
                 padding: 15px;
                 color: #464646;
                 font-weight: 700;
+                font-size: 14px;
                 text-transform: uppercase;
                 text-decoration: none;
             &.active,

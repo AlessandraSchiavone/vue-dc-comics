@@ -18,7 +18,7 @@ export default {
         background-color:#1C1C1C;
     }
     .contents h1 {
-        font-size: 30px;
+        font-size: 26px;
         color:white;
     }
 </style>
