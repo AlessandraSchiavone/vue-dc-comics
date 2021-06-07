@@ -7,6 +7,7 @@
     <!-- corpo della pagina -->
     <main>
       <Contents />
+      <Buy />
     </main>
     <!-- /corpo della pagina -->
 
@@ -23,6 +24,7 @@ import Header from './components/Header';
 import Contents from './components/Contents';
 import FooterFirst from './components/FooterFirst';
 import FooterSecond from './components/FooterSecond';
+import Buy from './components/Buy';
 
 export default {
   name: 'App',
@@ -30,7 +32,8 @@ export default {
     Header,
     Contents,
     FooterFirst,
-    FooterSecond
+    FooterSecond,
+    Buy
   }
 }
 </script>

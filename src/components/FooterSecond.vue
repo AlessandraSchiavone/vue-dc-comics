@@ -26,17 +26,18 @@ export default {
  @import "../style/variables";
     footer {
         padding:5px 0px;
-        height:120px;
+        height:110px;
         background-color: #303030;
     }
     .container{
-        height:120px;
+        height:100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     .left{
-        border:1px solid #0282FA;
+        border:1px solid $brandColor;
+        cursor: pointer;
         padding:10px 20px;
         font-size:20px;
         text-transform: uppercase;
@@ -44,11 +45,12 @@ export default {
         font-weight: 700;
     }
     .right{
-        color:#0282FA;
+        color:$brandColor;
         text-transform: uppercase;
         font-size:20px;
         font-weight: 700;
         img{
+            cursor: pointer;
             vertical-align: middle;
             padding:5px 10px;
         }

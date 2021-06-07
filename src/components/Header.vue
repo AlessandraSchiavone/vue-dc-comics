@@ -111,11 +111,11 @@ export default {
                 text-decoration: none;
             &.active,
             &:hover {
-                color: #0282FA;
+                color: $brandColor;
                 }
             }
             &.active{
-                border-bottom:4px solid #0282FA;
+                border-bottom:4px solid $brandColor;
             }
            
         }
