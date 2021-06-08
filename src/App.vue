@@ -6,7 +6,8 @@
 
     <!-- corpo della pagina -->
     <main>
-      <Contents />
+      <Jumbotron />
+      <Series/>
       <Buy />
     </main>
     <!-- /corpo della pagina -->
@@ -21,19 +22,21 @@
 
 <script>
 import Header from './components/Header';
-import Contents from './components/Contents';
+import Jumbotron from './components/Jumbotron';
 import FooterFirst from './components/FooterFirst';
 import FooterSecond from './components/FooterSecond';
 import Buy from './components/Buy';
+import Series from './components/Series';
 
 export default {
   name: 'App',
   components: {
     Header,
-    Contents,
+    Jumbotron,
     FooterFirst,
     FooterSecond,
-    Buy
+    Buy,
+    Series
   }
 }
 </script>

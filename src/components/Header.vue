@@ -7,7 +7,7 @@
         <nav>
             <ul>
                 <li v-for="(link, index) in links" :key="index" :class="{ active: link.current }">
-                    <a :href="link.url" :class="{ active: link.current }">{{ link.text }}</a>
+                    <a :href="link.url" :class="{ active: link.current }" >{{ link.text }}</a>
                 </li>
             </ul>
         </nav>        
@@ -75,11 +75,7 @@ export default {
             ]
         }
     }, 
-    methods: {
-        saluta: function() {
-            alert("Ciao");
-        }
-    }
+    
 }
 </script>
 

@@ -1,25 +1,9 @@
 <template>
     <section>
         <div class="container">
-          <div>
-              <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-              <span>Digital Comics</span>
-          </div>
-          <div>
-              <img src="../assets/img/buy-comics-merchandise.png" alt="">
-              <span>DC Merchandise</span>
-          </div>
-          <div>
-              <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-              <span>Subscription</span>
-          </div>
-          <div>
-              <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-              <span>Comic Shop Locator</span>
-          </div>
-          <div>
-              <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-              <span>Dc power visa</span>
+          <div v-for="(buy, index) in buys" :key="index">
+              <img :src="buy.src" :alt="buy.text">
+              <span>{{ buy.text }}</span>
           </div>
         </div>
   </section> 
@@ -28,6 +12,32 @@
 <script>
 export default {
     name: "Buy",
+    data: function(){
+        return {
+            buys:[
+                {
+                    src:require("../assets/img/buy-comics-digital-comics.png"),
+                    text:"Digital Comics"
+                },
+                {
+                    src:require("../assets/img/buy-comics-merchandise.png"),
+                    text:"DC Merchandise"
+                },
+                {
+                    src:require("../assets/img/buy-comics-subscriptions.png"),
+                    text:"Subscription"
+                },
+                {
+                    src:require("../assets/img/buy-comics-shop-locator.png"),
+                    text:"Comic Shop Locator"
+                },
+                {
+                    src:require("../assets/img/buy-dc-power-visa.svg"),
+                    text:"Dc power visa"
+                },
+            ]
+        }
+    }
 }
 </script>
 
