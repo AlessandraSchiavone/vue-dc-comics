@@ -42,54 +42,54 @@ export default {
     return {
       menu: [
               {
-                    text: "Characters",
-                    url: "#characters",
-                    current: false
+                text: "Characters",
+                url: "#characters",
+                current: false
               },
               {
-                    text: "Comics",
-                    url: "#comics",
-                    current: true
+                text: "Comics",
+                url: "#comics",
+                current: true
               },
               {
-                    text: "Movies",
-                    url: "#movies",
-                    current: false
+                text: "Movies",
+                url: "#movies",
+                current: false
               },
               {
-                    text: "Tv",
-                    url: "#tv",
-                    current: false
+                text: "Tv",
+                url: "#tv",
+                current: false
               },
               {
-                    text: "Games",
-                    url: "#games",
-                    current: false
+                text: "Games",
+                url: "#games",
+                current: false
               },
               {
-                    text: "Collectibles",
-                    url: "#collectibles",
-                    current: false
+                text: "Collectibles",
+                url: "#collectibles",
+                current: false
               },
               {
-                    text: "Videos",
-                    url: "#videos",
-                    current: false
+                text: "Videos",
+                url: "#videos",
+                current: false
               },
               {
-                    text: "Fans",
-                    url: "#fans",
-                    current: false
+                text: "Fans",
+                url: "#fans",
+                current: false
               },
               {
-                    text: "News",
-                    url: "#news",
-                    current: false
+                text: "News",
+                url: "#news",
+                current: false
               },
               {
-                    text: "Shop",
-                    url: "#shop",
-                    current: false
+                text: "Shop",
+                url: "#shop",
+                current: false
               }
           ]
     }

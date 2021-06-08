@@ -2,12 +2,12 @@
 <div class="container">
   <header>
         <a href="/">
-                <img src="../assets/img/dc-logo.png" alt="">
-            </a>
+            <img src="../assets/img/dc-logo.png" alt="">
+        </a>
         <nav>
             <ul>
                 <li v-for="(link, index) in links" :key="index" :class="{ active: link.current }">
-                    <a :href="link.url" :class="{ active: link.current }" >{{ link.text }}</a>
+                    <a :href="link.url" :class="{ active: link.current }" @click="toggle(index)">{{ link.text }}</a>
                 </li>
             </ul>
         </nav>        
@@ -18,7 +18,18 @@
 <script>
 export default {
     name: "Header",
-    props: [ "links" ]
+    props: [ "links" ],
+    methods: {
+        toggle: function(index){
+            this.links[index].current = !this.links[index].current;
+            for(let i=0; i< this.links.length;i++){
+                if(i!=index){
+                    this.links[i].current = false;
+                } 
+            }
+            return(this.links[index].current)
+        }
+    }
 }
 </script>
 
@@ -48,10 +59,10 @@ export default {
                 font-size: 14px;
                 text-transform: uppercase;
                 text-decoration: none;
-            &.active,
-            &:hover {
-                color: $brandColor;
-                }
+                &.active,
+                &:hover {
+                    color: $brandColor;
+                    }
             }
             &.active{
                 border-bottom:4px solid $brandColor;
