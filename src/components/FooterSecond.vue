@@ -27,7 +27,7 @@ export default {
     footer {
         padding:5px 0px;
         height:110px;
-        background-color: #303030;
+        background-color: rgba($bgColor,0.9);
     }
     .container{
         height:100%;

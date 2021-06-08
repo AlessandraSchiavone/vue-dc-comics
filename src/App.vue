@@ -1,7 +1,7 @@
 <template>
   <div id="app">
      <!-- testata della pagina -->
-    <Header />
+    <Header :links="menu" />
     <!-- /testata della pagina -->
 
     <!-- corpo della pagina -->
@@ -33,10 +33,66 @@ export default {
   components: {
     Header,
     Jumbotron,
-    FooterFirst,
-    FooterSecond,
+    Series,
     Buy,
-    Series
+    FooterFirst,
+    FooterSecond 
+  },
+  data: function() {
+    return {
+      menu: [
+              {
+                    text: "Characters",
+                    url: "#characters",
+                    current: false
+              },
+              {
+                    text: "Comics",
+                    url: "#comics",
+                    current: true
+              },
+              {
+                    text: "Movies",
+                    url: "#movies",
+                    current: false
+              },
+              {
+                    text: "Tv",
+                    url: "#tv",
+                    current: false
+              },
+              {
+                    text: "Games",
+                    url: "#games",
+                    current: false
+              },
+              {
+                    text: "Collectibles",
+                    url: "#collectibles",
+                    current: false
+              },
+              {
+                    text: "Videos",
+                    url: "#videos",
+                    current: false
+              },
+              {
+                    text: "Fans",
+                    url: "#fans",
+                    current: false
+              },
+              {
+                    text: "News",
+                    url: "#news",
+                    current: false
+              },
+              {
+                    text: "Shop",
+                    url: "#shop",
+                    current: false
+              }
+          ]
+    }
   }
 }
 </script>

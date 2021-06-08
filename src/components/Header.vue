@@ -18,64 +18,7 @@
 <script>
 export default {
     name: "Header",
-    data: function() {
-        return {
-            links: [
-                {
-                    text: "Characters",
-                    url: "#characters",
-                    current: false
-                },
-                {
-                    text: "Comics",
-                    url: "#comics",
-                    current: true
-                },
-                {
-                    text: "Movies",
-                    url: "#movies",
-                    current: false
-                },
-                {
-                    text: "Tv",
-                    url: "#tv",
-                    current: false
-                },
-                 {
-                    text: "Games",
-                    url: "#games",
-                    current: false
-                },
-                 {
-                    text: "Collectibles",
-                    url: "#collectibles",
-                    current: false
-                },
-                 {
-                    text: "Videos",
-                    url: "#videos",
-                    current: false
-                },
-                 {
-                    text: "Fans",
-                    url: "#fans",
-                    current: false
-                },
-                 {
-                    text: "News",
-                    url: "#news",
-                    current: false
-                },
-                 {
-                    text: "Shop",
-                    url: "#shop",
-                    current: false
-                },
-
-            ]
-        }
-    }, 
-    
+    props: [ "links" ]
 }
 </script>
 
@@ -100,7 +43,7 @@ export default {
             height:100%;
             a {
                 padding: 15px;
-                color: #464646;
+                color: rgba($bgColor,0.8);
                 font-weight: 700;
                 font-size: 14px;
                 text-transform: uppercase;

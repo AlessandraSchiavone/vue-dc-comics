@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="container">
-            <span class="btn-current">
+            <span class="btn btn-current">
                 Current Series
             </span>
             <div class="series-cont">
@@ -10,7 +10,7 @@
                     :key="index"
                     :single-product="serie"
                 /> 
-            <span class="btn-load">
+            <span class="btn btn-load">
                 Load More
             </span> 
             </div>
@@ -39,7 +39,7 @@ export default {
 @import "../style/variables";
 section{
     position:relative;
-    background-color: #1C1C1C;
+    background-color: $bgColor;
 }
 .series-cont{
     padding:60px 0px;
@@ -47,27 +47,26 @@ section{
     display: flex;
     flex-wrap: wrap;
 }
-.btn-current{
-    position:absolute;
-    top:-28px;
-    font-size: 28px;
+.btn{
     color:white;
-    padding:10px 20px;
     font-weight: 700;
     text-transform: uppercase;
     background-color: $brandColor;
 }
+.btn-current{
+    position:absolute;
+    top:-28px;
+    font-size: 28px;
+    padding:10px 20px; 
+}
 .btn-load{
+    cursor: pointer;
     position:absolute;
     right:50%;
     bottom:2%;
     transform: translateX(50%);
     font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
     padding:10px 50px;
-    color:white;
-    background-color: $brandColor;
 }
 
 </style>
